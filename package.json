@@ -1,15 +1,25 @@
 {
   "name": "jsTunez",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexblum/jsTunez.git"
+  },
+  "homepage": "https://github.com/alexblum/jsTunez",
   "dependencies": {
+    "express": "~4.13.1",
+    "mkdirp": "~0.5.1",
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
+    "musicmetadata": "~2.0.0",
+    "nedb": "~1.1.2",
+    "player": "~0.5.0",
+
     "debug": "~2.2.0",
-    "express": "~4.13.1",
     "hbs": "~3.1.0",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
