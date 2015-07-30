@@ -9,7 +9,7 @@ var app = null;
 var cnt = 0;
 var song_list = [];
 var now_milli = 0;
-var song_extentions = ["mp3"];
+var song_extentions = ['mp3'];
 
 // must be called before anything else
 exports.setApp = function(appRef) {
