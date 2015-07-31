@@ -80,6 +80,17 @@ html, body {
 .tunez-layout .tunez-navigation .mdl-navigation__link:hover {
   background-color: #303F9F;  /* indigo-700 */
 }
+
+.tunez-layout .mdl-data-table {
+  white-space: normal;
+  border: none;
+}
+
+.tunez-layout .mdl-data-table td {
+  vertical-align: middle;
+  padding: 10px 24px;
+}
+
 .tunez-navigation .mdl-navigation__link .material-icons {
   font-size: 24px;
   margin-right: 32px;
@@ -112,18 +123,6 @@ html, body {
 .tunez-cards .mdl-card {
   min-height: unset;
 }
-/*
-.tunez-cards ul {
-  padding: 0;
-}
-.tunez-cards h3 {
-  font-size: 1em;
-}
-
-.tunez-cards .mdl-card__actions a {
-  color: #00BCD4;
-  text-decoration: none;
-}*/
 
 .tunez-playing .mdl-card__actions,
 .tunez-options .mdl-card__actions {
@@ -139,8 +138,8 @@ html, body {
   align-items: center;
 }
 
-td.song-action {
-  padding-top: 6px;
+.tunez-playing table {
+  width: 100%;
 }
 
 .search-box {
