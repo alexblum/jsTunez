@@ -11,6 +11,8 @@ exports.createRoutes = function (app_ref) {
 
   lib_func.setApp(app);
 
+  app.get('/', generalRoute);
+
   app.get('/scan', function (req, res) {
     lib_func.scanLibrary(false);
     res.send('ok');
@@ -35,6 +37,10 @@ exports.createRoutes = function (app_ref) {
   app.get('/queue/remove/:id', removeFromQueue);
 
 };
+
+function generalRoute(req, res) {
+  res.render('index');
+}
 
 function commandPlayer(req, res) {
   var cmd = req.params.cmd;

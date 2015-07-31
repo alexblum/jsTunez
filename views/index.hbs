@@ -1,2 +1,286 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jsTunez</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="/stylesheets/material.css">-->
+    <link href="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-red.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+  </head>
+  <body>
+    <div class="tunez-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="tunez-header mdl-layout__header mdl-color--white mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <div class="search-box">
+            <i class="material-icons">search</i>
+            <input id="searchBox" placeholder="Search" />
+            <i class="material-icons clear-search">clear</i>
+          </div>
+        </div>
+      </header>
+      <div class="tunez-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="tunez-drawer-header">
+          <h2>jsTunez</h2>
+        </header>
+        <nav class="tunez-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">queue_music</i>Playlist</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">search</i>Browse</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">history</i>Play History</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">equalizer</i>Charts</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">library_add</i>Recently added</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">block</i>Blocked songs</a>
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">settings</i>Settings</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-grid tunez-content">
+          <div class="tunez-middle-content mdl-cell mdl-cell--8-col">
+            <div class="mdl-card mdl-shadow--2dp">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Title</h2>
+              </div>
+
+              <table class="mdl-data-table mdl-js-data-table">
+                <thead>
+                <tr>
+                  <th class="mdl-data-table__cell--non-numeric">Song Title</th>
+                  <th class="mdl-data-table__cell--non-numeric">Artist</th>
+                  <th class="mdl-data-table__cell--non-numeric">Album</th>
+                  <th class="mdl-data-table__cell--non-numeric">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Asche Zu Asche</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Rammstein</a>
+                  </td>
+                  <td class="mdl-data-table__cell--non-numeric">
+                    <a href="#">Herzeleid</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect mdl-button--colored"><i class="material-icons">playlist_add</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">mode_edit</i></button>
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">visibility_off</i></button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+            </div>
+          </div>
+          <div class="tunez-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
+
+            <div class="tunez-playing mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">Now playing</h2>
+              </div>
+              <div class="mdl-card__supporting-text">
+                <a href="#">Rammstein - Mutter</a>
+              </div>
+              <div class="mdl-card__actions mdl-card--border">
+                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--grey-600">skip song</a>
+                <div class="mdl-layout-spacer"></div>
+                <a href="#" title="skip song" class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">fast_forward</i></a>
+              </div>
+            </div>
+
+            <div class="tunez-separator mdl-cell--1-col"></div>
+
+            <div class="tunez-play-list mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
+              <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">PlayList</h2>
+              </div>
+              <table class="mdl-data-table mdl-js-data-table">
+                <tbody>
+                <tr>
+                  <td>
+                    <a href="#">Rammstein - Reise, Reise</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">clear</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Rammstein - Reise, Reise</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">clear</i></button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#">Rammstein - Reise, Reise</a>
+                  </td>
+                  <td class="song-action mdl-data-table__cell--non-numeric">
+                    <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"><i class="material-icons">clear</i></button>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="/javascripts/jquery-2.1.4.min.js"></script>
+    <script src="/javascripts/material.js"></script>
+    <script src="/javascripts/script.js"></script>
+  </body>
+</html>
