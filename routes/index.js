@@ -39,7 +39,10 @@ exports.createRoutes = function (app_ref) {
 };
 
 function generalRoute(req, res) {
-  res.render('index');
+  _findRandomSong(10, function(err, songs) {
+    console.log(songs);
+    res.render('index', songs);
+  });
 }
 
 function commandPlayer(req, res) {

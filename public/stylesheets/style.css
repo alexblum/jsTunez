@@ -97,7 +97,7 @@ html, body {
 }
 
 .tunez-content {
-  max-width: 1080px;
+  /* max-width: 1080px; */
 }
 
 .tunez-middle-content .mdl-card,
@@ -171,4 +171,8 @@ html, body {
   margin-right: -8px;
   transition: opacity 100ms ease-out;
   display: none;
+}
+
+.song-action {
+  white-space: nowrap;
 }
