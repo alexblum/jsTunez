@@ -16,6 +16,7 @@ exports.setApp = function(appRef) {
   app = appRef;
 };
 
+// scan the library
 exports.scanLibrary = function(hard) {
   hard_rescan = hard;
   now_milli = Date.now();
