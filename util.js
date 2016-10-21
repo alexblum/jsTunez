@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 
+// walk the file tree
 var walk = function (currentDirPath, callback) {
   fs.readdirSync(currentDirPath).forEach(function(name) {
     var filePath = path.join(currentDirPath, name);
